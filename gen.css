@@ -1,0 +1,211 @@
+.mt-1 {
+  margin-top: 10px;
+}
+
+@media (min-width: 576px) {
+  .sm\:mt-1 {
+    margin-top: 10px;
+  }
+}
+@media (min-width: 768px) {
+  .md\:mt-1 {
+    margin-top: 10px;
+  }
+}
+@media (min-width: 992px) {
+  .lg\:mt-1 {
+    margin-top: 10px;
+  }
+}
+@media (min-width: 1200px) {
+  .xl\:mt-1 {
+    margin-top: 10px;
+  }
+}
+.mt-2 {
+  margin-top: 20px;
+}
+
+@media (min-width: 576px) {
+  .sm\:mt-2 {
+    margin-top: 20px;
+  }
+}
+@media (min-width: 768px) {
+  .md\:mt-2 {
+    margin-top: 20px;
+  }
+}
+@media (min-width: 992px) {
+  .lg\:mt-2 {
+    margin-top: 20px;
+  }
+}
+@media (min-width: 1200px) {
+  .xl\:mt-2 {
+    margin-top: 20px;
+  }
+}
+.mt-3 {
+  margin-top: 30px;
+}
+
+@media (min-width: 576px) {
+  .sm\:mt-3 {
+    margin-top: 30px;
+  }
+}
+@media (min-width: 768px) {
+  .md\:mt-3 {
+    margin-top: 30px;
+  }
+}
+@media (min-width: 992px) {
+  .lg\:mt-3 {
+    margin-top: 30px;
+  }
+}
+@media (min-width: 1200px) {
+  .xl\:mt-3 {
+    margin-top: 30px;
+  }
+}
+.mt-4 {
+  margin-top: 40px;
+}
+
+@media (min-width: 576px) {
+  .sm\:mt-4 {
+    margin-top: 40px;
+  }
+}
+@media (min-width: 768px) {
+  .md\:mt-4 {
+    margin-top: 40px;
+  }
+}
+@media (min-width: 992px) {
+  .lg\:mt-4 {
+    margin-top: 40px;
+  }
+}
+@media (min-width: 1200px) {
+  .xl\:mt-4 {
+    margin-top: 40px;
+  }
+}
+.float-start {
+  float: left;
+}
+
+@media (min-width: 576px) {
+  .sm\:float-start {
+    float: left;
+  }
+}
+@media (min-width: 768px) {
+  .md\:float-start {
+    float: left;
+  }
+}
+@media (min-width: 992px) {
+  .lg\:float-start {
+    float: left;
+  }
+}
+@media (min-width: 1200px) {
+  .xl\:float-start {
+    float: left;
+  }
+}
+.float-end {
+  float: right;
+}
+
+@media (min-width: 576px) {
+  .sm\:float-end {
+    float: right;
+  }
+}
+@media (min-width: 768px) {
+  .md\:float-end {
+    float: right;
+  }
+}
+@media (min-width: 992px) {
+  .lg\:float-end {
+    float: right;
+  }
+}
+@media (min-width: 1200px) {
+  .xl\:float-end {
+    float: right;
+  }
+}
+.float-none {
+  float: none;
+}
+
+@media (min-width: 576px) {
+  .sm\:float-none {
+    float: none;
+  }
+}
+@media (min-width: 768px) {
+  .md\:float-none {
+    float: none;
+  }
+}
+@media (min-width: 992px) {
+  .lg\:float-none {
+    float: none;
+  }
+}
+@media (min-width: 1200px) {
+  .xl\:float-none {
+    float: none;
+  }
+}
+.container {
+  margin: auto;
+  max-width: 100%;
+}
+@media (min-width: 576px) {
+  .container {
+    margin: auto;
+    max-width: 540px;
+  }
+}
+@media (min-width: 768px) {
+  .container {
+    margin: auto;
+    max-width: 720px;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    margin: auto;
+    max-width: 960px;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    margin: auto;
+    max-width: 1140px;
+  }
+}
+
+body {
+  background-color: indianred;
+}
+@media (min-width: 768px) {
+  body {
+    background-color: indigo;
+  }
+}
+
+h1 {
+  color: green;
+}
+
+/*# sourceMappingURL=gen.css.map */
