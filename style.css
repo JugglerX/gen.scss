@@ -208,4 +208,13 @@ h1 {
   color: green;
 }
 
-/*# sourceMappingURL=gen.css.map */
+.header {
+  background-color: blue;
+}
+@media (min-width: 768px) {
+  .header {
+    background-color: red;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

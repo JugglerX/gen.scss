@@ -49,7 +49,7 @@ $utilities: (
 
 
 @function is-zero-breakpoint($name) {
-  $value: map-get($breakpoints, $name);
+  $value: map.get($breakpoints, $name);
   @if ($value != 0) {
     @return false;
   } @else {
@@ -61,7 +61,7 @@ $utilities: (
   @if is-zero-breakpoint($name) {
     @content;
   } @else {
-    @media (min-width: map-get($breakpoints, $name)) {
+    @media (min-width: map.get($breakpoints, $name)) {
       @content;
     }
   }

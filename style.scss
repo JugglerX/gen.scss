@@ -1,0 +1,8 @@
+@import 'gen';
+
+.header {
+  background-color: blue;
+  @include breakpoint-up(md) {
+    background-color: red;
+  }
+}
