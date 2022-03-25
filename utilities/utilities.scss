@@ -1,0 +1,181 @@
+@import './variables';
+
+$utilities: (
+  "width": (
+    property: width,
+    prefix: w,
+    styles: $spacers
+  ),
+  "max-width": (
+    property: max-width,
+    prefix: mw,
+    styles: $spacers
+  ),
+  "margin": (
+    property: margin,
+    prefix: m,
+    styles: $spacers
+  ),
+  "margin-top": (
+    property: margin-top,
+    prefix: mt,
+    styles: $spacers
+  ),
+  "margin-bottom": (
+    property: margin-bottom,
+    prefix: mb,
+    styles: $spacers
+  ),
+  "margin-left": (
+    property: margin-left,
+    prefix: ml,
+    styles: $spacers
+  ),
+  "margin-right": (
+    property: margin-right,
+    prefix: mr,
+    styles: $spacers
+  ),
+  "margin-x-auto": (
+    property: margin,
+    prefix: mx,
+    styles: (
+      auto: 0 auto
+    )
+  ),
+  "margin-y-auto": (
+    property: margin,
+    prefix: my,
+    styles: (
+      auto: auto 0
+    )
+  ),
+  "padding": (
+    property: padding,
+    prefix: p,
+    styles: $spacers
+  ),
+  "padding-top": (
+    property: padding-top,
+    prefix: pt,
+    styles: $spacers
+  ),
+  "padding-bottom": (
+    property: padding-bottom,
+    prefix: pb,
+    styles: $spacers
+  ),
+  "padding-left": (
+    property: padding-left,
+    prefix: pl,
+    styles: $spacers
+  ),
+  "padding-right": (
+    property: padding-right,
+    prefix: pr,
+    styles: $spacers
+  ),
+  "float": (
+    property: float,
+    prefix: float,
+    styles: (
+      left: left,
+      right: right,
+      none: none
+    )
+  ),
+  "position": (
+    property: position,
+    prefix: position,
+    styles: (
+      static: static,
+      absolute: absolute,
+      fixed: fixed,
+      relative: relative,
+      sticky: sticky,
+      initial: initial,
+      inherit: inherit
+    )
+  ),
+  "top": (
+    property: top,
+    prefix: top,
+    styles: $spacers
+  ),
+  "right": (
+    property: right,
+    prefix: right,
+    styles: $spacers
+  ),
+  "left": (
+    property: left,
+    prefix: left,
+    styles: $spacers
+  ),
+  "bottom": (
+    property: bottom,
+    prefix: bottom,
+    styles: $spacers
+  ),
+  "text-color": (
+    property: color,
+    prefix: text,
+    styles: $colors
+  ),
+  "text-align": (
+    property: text-align,
+    prefix: text,
+    styles: (
+      left: left,
+      center: center,
+      right: right,
+      justify: justify
+    )
+  ),
+  "bg-color": (
+    property: "background-color",
+    prefix: bg,
+    styles: $colors
+  ),
+  "display": (
+    property: display,
+    prefix: display,
+    styles: (
+      block: block,
+      inline-block: inline-block,
+      inline: inline,
+      flex: flex,
+      inline-flex: inline-flex
+    )
+  ),
+  "align-items": (
+    property: align-items,
+    styles: (
+      items-start: flex-start,
+      items-end: flex-end,
+      items-center: center,
+      items-baseline: baseline,
+      items-stretch: stretch
+    )
+  ),
+  "justify-content": (
+    property: justify-content,
+    prefix: justify,
+    styles: (
+      start: flex-start,
+      end: flex-end,
+      center: center,
+      between: space-between,
+      around: space-around,
+      evenly: space-evenly
+    )
+  ),
+  "flex-direction": (
+    property: flex-direction,
+    prefix: flex,
+    styles: (
+      row: row,
+      col: column
+    )
+  )
+);

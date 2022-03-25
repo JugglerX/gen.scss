@@ -1,0 +1,37 @@
+// Generator spacers
+$spacers: (
+  "auto": auto,
+  "full": 100%,
+  "1\\/4": 25%,
+  "2\\/4": 50%,
+  "3\\/4": 75%,
+  "4\\/4": 100%,
+) !default;
+
+$step: 8px;
+
+@for $i from -10 through 10 {
+  $key: $i;
+  @if ($i < 0) {
+    $key: "n#{$i}";
+  }
+  $value: $i * $step;
+  $spacers: map-merge(
+    $spacers,
+    (
+      $key: $value
+    )
+  );
+}
+
+// Generate colors
+$colors: () !default;
+
+$colors: map-merge(
+  $colors,
+  (
+    "black": #000000,
+    "white": #FFFFFF,
+    "primary": #FF9944
+  )
+);

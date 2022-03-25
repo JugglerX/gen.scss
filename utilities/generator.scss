@@ -1,0 +1,39 @@
+@import "./breakpoints";
+@import "./utilities";
+
+@each $utilities-key, $utilities-value in $utilities {
+  $property: map-get($utilities-value, "property");
+  $prefix: map-get($utilities-value, "prefix");
+  $inline: map-get($utilities-value, "inline");
+  $styles: map-get($utilities-value, "styles");
+  $children: map-get($utilities-value, "children");
+  @each $style-key, $style-value in $styles {
+    @each $breakpoint-key, $breakpoint-value in $breakpoints {
+      @if (is-zero-breakpoint($breakpoint-key)) {
+        @include breakpoint-up($breakpoint-key) {
+          @if ($prefix) {
+            .#{$prefix}-#{$style-key} #{$children} {
+              #{$property}: $style-value !important;
+            }
+          } @else {
+            .#{$style-key} #{$children} {
+              #{$property}: $style-value !important;
+            }
+          }
+        }
+      } @else {
+        @include breakpoint-up($breakpoint-key) {
+          @if ($prefix) {
+            .#{$breakpoint-key}\:#{$prefix}-#{$style-key} #{$children} {
+              #{$property}: $style-value !important;
+            }
+          } @else {
+            .#{$breakpoint-key}\:#{$style-key} #{$children} {
+              #{$property}: $style-value !important;
+            }
+          }
+        }
+      }
+    }
+  }
+}
